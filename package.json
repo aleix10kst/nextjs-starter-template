@@ -1,7 +1,6 @@
 {
   "name": "next-starter",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +9,9 @@
     "lint:fix": "next lint --fix",
     "format:write": "prettier --write \"**/*.{ts,tsx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx}\" --cache",
+    "postinstall": "is-ci || husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
     "shadcn:add": "npx shadcn-ui@latest add"
   },
   "dependencies": {
@@ -39,10 +41,14 @@
     "eslint-config-next": "13.5.4",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "pinst": "^3.0.0",
     "postcss": "^8",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@3.6.4"
 }
