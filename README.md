@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter Template
 
-## Getting Started
+A robust starter template for Next.js projects bundled with best practices and popular tools like ESLint, Prettier, TailwindCSS, Shadcn components, and Drizzle. Enhanced with the App Router from Next.js 13 for efficient routing.
 
-First, run the development server:
+## 📋 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js with App Router**: A lightweight framework for static and server-rendered React applications with the latest routing capabilities.
+- **ESLint**: A pluggable linting utility for JavaScript to ensure code quality.
+- **Prettier**: An opinionated code formatter to maintain a consistent code style.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Shadcn Components**: Reusable React components to speed up your UI building process.
+- **Drizzle**: A collection of libraries that make it easier to connect your front-end to a blockchain.
+
+## 🚀 Getting Started
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/aleix10kst/nextjs-starter-template.git
+   cd nextjs-starter-template
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the Development Server**
+
+   ```bash
+   yarn dev
+   ```
+
+Visit `http://localhost:3000` and you should see your Next.js app running!
+
+## 🛠 Configuration
+
+- **ESLint & Prettier**: Config files for ESLint and Prettier are present at the root directory as `.eslintrc.js` and `.prettierrc.js` respectively. You can modify them as per your project requirements.
+
+- **TailwindCSS**: Configuration file `tailwind.config.js` is present at the root. Customize your utility classes and theme as needed.
+
+- **shadcn/ui**: Configuration file `components.json` is present at the root.
+
+- **dirzzle ORM**: Configuration file `drizzle.config.ts` for drizzle-kit is present at the root. You also have `src/db/index.ts` for drizzle-orm.
+
+## 🧐 Folder Structure
+
+```plaintext
+.
+├── src
+│   │ app/
+│   └── ...
+│   │ components/
+│   └── ui/
+│   └── ...
+│   │ db/
+│   └── schema.ts
+│   └── index.ts
+├── styles/
+│   └── globals.css
+├── .eslintrc.cjs
+├── .prettierrc.cjs
+├── tailwind.config.ts
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Tips
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Always run `yarn lint` to check for any linting errors in the code.
+- Customize the base styles in `styles/tailwind.css` to fit the branding of your project.
+- Keep the components modular and reusable for scalability.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📖 Documentation
 
-## Learn More
+For deeper insights and customization, refer to the official documentation of the respective tools:
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/docs)
+- [ESLint](https://eslint.org/docs/user-guide/getting-started)
+- [Prettier](https://prettier.io/docs/en/index.html)
+- [TailwindCSS](https://tailwindcss.com/docs)
+- [Shadcn Components](https://shadcn-docs-url.com)
+- [Drizzle](https://drizzle-url.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Built with 💙 by [Aleix Canet](https://aleixcanet.dev).
