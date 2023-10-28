@@ -1,6 +1,6 @@
-import './src/env/server';
+import './src/env/server.mjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-module.exports = nextConfig;
+export default nextConfig;
