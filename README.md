@@ -23,13 +23,13 @@ A robust starter template for Next.js projects bundled with best practices and p
 2. **Install Dependencies**
 
    ```bash
-   yarn install
+   pnpm install
    ```
 
 3. **Run the Development Server**
 
    ```bash
-   yarn dev
+   pnpm dev
    ```
 
 Visit `http://localhost:3000` and you should see your Next.js app running!
@@ -67,7 +67,7 @@ Visit `http://localhost:3000` and you should see your Next.js app running!
 
 ## 💡 Tips
 
-- Always run `yarn lint` to check for any linting errors in the code.
+- Always run `pnpm lint` to check for any linting errors in the code.
 - Customize the base styles in `styles/tailwind.css` to fit the branding of your project.
 - Keep the components modular and reusable for scalability.
 
